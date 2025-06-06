@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reciclaje</title>
+    <style>
+        body {
+            background-image: url('fondo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        img {
+            margin: 15px;
+        }
+
+        .gif {
+            width: 930px;
+            display: inline-block;
+        }
+
+        .btn {
+            width: 210px;
+            height: auto;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .info-section {
+            background-color: rgba(0, 0, 0, 0.6); 
+            padding: 20px;
+            margin: 40px;
+            border-radius: 10px;
+        }
+
+        .banner-vertical {
+            float: left;
+            margin: 0;
+        }
+
+        .banner-vertical img {
+            width: 146px;
+            height: auto;
+            border-radius: 40px;
+        }
+
+        video, audio {
+            display: block;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        button {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        #iframe-local {
+            display: block;
+            margin: 30px auto;
+            border-radius: 10px;
+            border: none;
+            width: 100%;
+            height: 500px;
+        }
+
+        #iframe-externo {
+            display: block;
+            margin: 30px auto;
+            border-radius: 10px;
+            border: none;
+            width: 85%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>   
+    <div style="text-align: center;">
+        <img src="gif dos.gif"
+             onmouseover="this.src='ESTATICA TRES.jpg'"
+             onmouseout="this.src='gif dos.gif'"
+             onclick="this.src='ESTATICA TRES.jpg'" class="gif">
+    </div>
+    <div style="text-align: center;">
+    <a href="file:///D:/darien/index.html"><button><img src="reforestacion.jpg" class="btn"></button></a>
+    <a href="file:///D:/darien/limpieza%20externa.html"><button><img src="limppieza institucional.jpg" class="btn"></button></a>
+    <a href="file:///D:/darien/limpieza%20institucional.html"><button><img src="limpieza externa.jpg" class="btn"></button></a>
+    <a href="file:///D:/darien/florayfauna.html"><button><img src="flora y fauna.jpg" class="btn"></button></a>
+    <a href="file:///D:/darien/reciclaje.html"><button><img src="reciclaje.jpg" class="btn"></button></a>
+    </div>
+    <iframe id="iframe-local" src="file:///D:/darien/limpieza%20externa.html"></iframe>
+    <div class="banner-vertical"> <img src="banner cinco.jpg" alt="Banner Vertical"></div>
+
+    <iframe id="iframe-externo" src="https://papeleradereciclaje.es/ventajas-reciclaje-en-colegios/"></iframe>
+    <div class="info-section">
+        <h2>¿Qué es la limpieza externa?</h2>
+        <p>El reciclaje educativo en la escuela, como el caso de reciclar botellas de plástico, es una actividad que busca enseñar a los estudiantes la importancia de reducir los residuos, reutilizar materiales y cuidar el medio ambiente. Más que una acción aislada, es una práctica que forma parte de una educación ambiental integral, en la que se promueven hábitos sostenibles y responsables.</p>
+        <p>Cuando los alumnos participan en el reciclaje de botellas de plástico —ya sea recolectándolas, clasificándolas o llevándolas a centros de acopio— están aprendiendo a valorar los recursos, a disminuir la contaminación y a tomar conciencia del impacto que generan los desechos en el planeta. Además, este tipo de actividades puede complementarse con talleres creativos donde las botellas se reutilizan para fabricar manualidades, macetas o decoraciones.</p>
+        <h3>Video informativo</h3>
+        <video controls>
+            <source src="Cómo reciclar_ - Guía completa de reciclaje - Algohayquehacer.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+        <h3>Audio explicativo</h3>
+        <audio controls>
+            <source src="Como mantener limpio por la escuela_.mp3" type="audio/mpeg">
+            Tu navegador no soporta el audio.
+        </audio>
+        <h3>Imagen representativa</h3>
+        <img src="imagen de reciclaje.jpg" width="300">
+    </div>
+</body>
+</html>
